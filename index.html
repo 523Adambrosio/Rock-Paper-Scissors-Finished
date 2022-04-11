@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <section class="game">
+      <br>
+      <!--Title -->
+      <div class="title">
+        Rock Paper Scissors
+      </div>
+      <br>
+      <br>
+      <!-- Scoreboard Display for User and AI -->
+      <div class="score">
+          <div class="playerScore">
+              <h2>Player</h2>
+              <p id="p-count"class="p-count count">0</p>
+
+          </div>
+          <div class="computerScore">
+              <h2>Computer</h2>
+              <p id="c-count"class="c-count count">0</p>
+          </div>
+      </div>
+          <!-- Instructions -->
+          <br>
+          <div class="move">Choose your move</div>
+          <div class="options">
+            <button class="rock" onClick="Rock()"><img class="imag" src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day-640x514.jpg" width="150" height="150" alt="Rock"><br>Rock</button>
+            <button class="paper" onClick="Paper()"><img class="imag" src="https://www.collinsdictionary.com/images/full/paper_111691001.jpg" width="150" height="150" alt="Paper"><br>Paper</button>
+            <button class="scissors" onClick="Scissors()"><img class="imag" src="https://p.globalsources.com/IMAGES/PDT/B1185433687/office-scissor.png" width="150" height="150" alt="Scissors"><br>Scissors</button>
+        </div>
+        <br>
+        <br>
+        <h2 class="text-center" id="result">Results</h2>
+        <br>
+        <br>
+          <!--Final result of game -->
+        <div class="result"></div>
+
+          <!--Reload the game -->
+          <div class="text-center">
+        <button class="reload" onClick="reset()">Reset Button<br>(Reset Game)</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
